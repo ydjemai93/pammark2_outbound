@@ -109,7 +109,7 @@ async def media_stream(websocket: WebSocket):
     try:
         # Connexion WS à OpenAI Realtime
         async with websockets.connect(
-            "wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview-2024-10-01",
+            "wss://wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview-2024-12-17",
             extra_headers={
                 "Authorization": f"Bearer {OPENAI_API_KEY}",
                 "OpenAI-Beta": "realtime=v1"
